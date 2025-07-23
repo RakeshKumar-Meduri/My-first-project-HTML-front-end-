@@ -1,0 +1,44 @@
+.button{
+    display: flex;
+    justify-content: space-evenly;
+}
+.device_btn {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  width: 100px;
+  height: 101px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+
+}
+
+.device_btn img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 0 auto 5px;
+}
+
+.device_btn span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+.device_btn:hover {
+  background-color: #B1B695;
+  transform: scale(1.05);
+  border-radius: 100px;
+  animation: float 2s ease-in-out infinite;
+  box-shadow:5px 10px 10px rgb(0, 0, 0, 0.5);
+}
